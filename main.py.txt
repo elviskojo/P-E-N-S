@@ -294,7 +294,7 @@ class AboutDialog(QDialog):
         layout.addWidget(title)
 
         layout.addWidget(QLabel("v1.0"))
-        layout.addWidget(QLabel("Copyright Okay TechCeo  2020"))
+        layout.addWidget(QLabel("Copyright @elviskojo 2023"))
         layout.addWidget(labelpic)
 
 
