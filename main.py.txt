@@ -90,11 +90,6 @@ class WorkerThread(QThread):
 
 
 
-
-
-
-
-
 class InsertDialog(QDialog):
     def __init__(self, *args, **kwargs):
         super(InsertDialog, self).__init__(*args, **kwargs)
@@ -261,10 +256,6 @@ class DeleteDialog(QDialog):
             QMessageBox.warning(QMessageBox(), 'Error', 'Could not Delete Product from the database.')
 
 
-
-
-
-
 class AboutDialog(QDialog):
     def __init__(self, *args, **kwargs):
         super(AboutDialog, self).__init__(*args, **kwargs)
@@ -386,9 +377,7 @@ class MainWindow(QMainWindow):
                 self.tableWidget.setItem(row_number, column_number,QTableWidgetItem(str(data)))
         self.connection.close()
         
-        
-
-                
+       
         
 
         #print(y)
@@ -427,9 +416,7 @@ class MainWindow(QMainWindow):
         dlg.exec_()
 
 
-        
-        
-
+       
 
 #app1=Notification()
 app = QApplication(sys.argv)
@@ -444,4 +431,3 @@ if(QDialog.Accepted == True):
 sys.exit(app.exec_())
 
 #app1=Notification()
-
